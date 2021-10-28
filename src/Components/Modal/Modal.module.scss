@@ -1,0 +1,32 @@
+.modal {
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    // left: 0;
+    // border: 1px solid black;
+    width: calc(100vw - 105px);
+}
+
+.modalHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    div {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+
+    .close h2 {
+        text-align: right;
+        color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+}
+

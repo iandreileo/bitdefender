@@ -1,0 +1,28 @@
+@import '../../App.scss';
+
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    position: relative;
+
+
+    p {
+        font-family: $secondaryFont;
+        font-size: 13px;
+        font-weight: 400;
+        margin: 10px 0 20px 0;
+    }
+
+    img {
+        margin-bottom: 20px;    
+    }
+
+    div {
+        text-align: center;
+    }
+}
