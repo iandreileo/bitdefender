@@ -13,7 +13,20 @@ $primaryColor: #027EE6;
   background-color: $primaryColor;
   font-family: $secondaryFont;
   outline: none;
-  border: 0;
+  border: 1px solid $primaryColor;
+  border-radius: 16px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.outlineButton {
+  color: #000000;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-family: $secondaryFont;
+  outline: none;
+  border: 1px solid #000000;
   border-radius: 16px;
   padding: 5px 10px;
   font-size: 14px;
@@ -27,3 +40,65 @@ h2 {
   color: #000000;
   margin: 0;
 }
+
+button, .card, .header svg {
+  cursor: pointer;
+}
+
+
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  top: 0;
+  z-index: 998;
+}
+
+h3 {
+  font-family: $secondaryFont;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+  height: 6px;
+  }
+  ::-webkit-scrollbar-thumb{
+  background: #D5D5D5;
+  border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+  background: #B3AFB3;
+  }
+  ::-webkit-scrollbar-track{
+  background: #F0F0F0;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+  }
+

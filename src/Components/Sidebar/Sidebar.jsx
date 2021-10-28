@@ -15,16 +15,16 @@ const Sidebar = () => {
         </div>
 
         <div>
-            <SidebarItem icon="dashboard" info="Dashboard" />
-            <SidebarItem icon="incidents" info="Incidents" />
-            <SidebarItem icon="network" info="Network" />
-            <SidebarItem icon="risk" info="Risk Management" />
-            <SidebarItem icon="policies" info="Policies" />
-            <SidebarItem icon="reports" info="Reports" />
-            <SidebarItem icon="quarantine" info="Quarantine" />
-            <SidebarItem icon="companies" info="Companies" />
-            <SidebarItem icon="accounts" info="Accounts" />
-            <SidebarItem icon="sandbox" info="Sandbox Analyzer" />
+            <SidebarItem icon="dashboard" info="Dashboard" onClick={() => alert("Dashboard")}/>
+            <SidebarItem icon="incidents" info="Incidents" onClick={() => alert("Incidents")}/>
+            <SidebarItem icon="network" info="Network" onClick={() => alert("Network")}/>
+            <SidebarItem icon="risk" info="Risk Management" onClick={() => alert("Risk")}/>
+            <SidebarItem icon="policies" info="Policies" onClick={() => alert("Policies")}/>
+            <SidebarItem icon="reports" info="Reports" onClick={() => alert("Reports")}/>
+            <SidebarItem icon="quarantine" info="Quarantine" onClick={() => alert("Quarantine")}/>
+            <SidebarItem icon="companies" info="Companies" onClick={() => alert("Companies")}/>
+            <SidebarItem icon="accounts" info="Accounts" onClick={() => alert("Accounts")}/>
+            <SidebarItem icon="sandbox" info="Sandbox Analyzer" onClick={() => alert("Analyzer")}/>
         </div>
 
     </aside>

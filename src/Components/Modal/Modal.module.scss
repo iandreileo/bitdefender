@@ -1,10 +1,13 @@
+@import '../../App.scss';
+
 .modal {
     position: absolute;
     background-color: white;
     bottom: 0;
     // left: 0;
     // border: 1px solid black;
-    width: calc(100vw - 105px);
+    width: calc(100vw - 100px);
+    z-index: 999;
 }
 
 .modalHeader {
@@ -21,12 +24,92 @@
         flex-direction: column;
         flex-basis: 100%;
         flex: 1;
+        padding: 0 20px;
     }
 
     .close h2 {
         text-align: right;
         color: rgba(0, 0, 0, 0.5);
         cursor: pointer;
+        // padding-right: 20px;
+    }
+
+    div:first-child {
+        // padding-left: 20px;
     }
 }
 
+.modalFooter {
+
+    padding: 20px 0;
+
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.16);
+
+    margin-bottom: 40px;
+
+    button {
+        margin-left: 20px;
+    }
+}
+
+.modalContent {
+    height: 400px;
+    overflow:auto;
+}
+
+.modalInner {
+    padding: 20px;
+    max-width: 50%;
+
+    .row {
+        display: flex;
+        // flex: 0 0 100%;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5px 0;
+
+        div {
+            // flex-shrink: 0;
+            flex-grow: 1;
+            width: 50%;
+        }
+    }
+
+    label {
+        font-family: $secondaryFont;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    span {
+        color: #027EE6;
+    }
+
+    select, input[type=text] {
+        border-radius: 4px;
+        border: 2px solid rgba(0, 0, 0, 0.03);
+        padding: 10px;
+        width: 100%;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.9);
+        font-family: $secondaryFont;
+    }
+
+    input, select {
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+
+    input[type=text]::placeholder {
+        padding-left: 5px;
+        font-style: italic;
+    }
+
+    input[type=checkbox] {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.9);
+        font-family: $secondaryFont;
+    }
+}

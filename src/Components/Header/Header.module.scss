@@ -1,0 +1,56 @@
+@import '../../App.scss';
+
+.header {
+
+    padding-right: 20px;
+    position: relative;
+
+    .innerHeader {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+    }
+
+    svg {
+        padding: 0px 5px;
+    }
+
+    div:nth-child(2) {
+        margin-left: 20px;
+    }
+
+    select {
+        border-radius: 4px;
+        border: 0;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+        padding: 10px;
+        width: 100%;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.9);
+        font-family: $secondaryFont;
+        margin-right: 20px;
+    }
+
+}
+
+
+
+select{
+    border-radius: 4px;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    padding: 10px;
+    width: 100%;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.9);
+    font-family: $secondaryFont;
+}
+
+.arrow {
+    position: absolute;
+    left: -5px;
+    padding: 0!important;
+}

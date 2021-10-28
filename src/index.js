@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ModalProvider from './Providers/ModalProvider';
+import ToastProvider from './Providers/ToastProvider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ModalProvider>
-      <App />
-    </ModalProvider>
+    <ToastProvider>
+      <ModalProvider>
+        <App />
+      </ModalProvider>
+    </ToastProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

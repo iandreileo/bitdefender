@@ -2,13 +2,14 @@ import React from 'react';
 import styles from './SidebarItem.module.scss';
 
 
-const SidebarItem = ({icon, info}) => {
+const SidebarItem = ({icon, info, onClick}) => {
 
+    
 
     return (
 
 
-        <div class={styles.card}>
+        <div class={styles.card} onClick={onClick}>
 
             <div class={styles.icon}>
                 <img src={process.env.PUBLIC_URL + `/assets/${icon}.svg`} />
