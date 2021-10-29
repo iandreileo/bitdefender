@@ -6,7 +6,7 @@ import ModalFooter from './ModalFooter';
 import styles from './Modal.module.scss';
 
 
-const Modal = () => {
+const Modal = ({title}) => {
 
     const [modal, setModal] = useContext(ModalContext);
 
@@ -17,7 +17,7 @@ const Modal = () => {
             modal ? 
             
             <div className={styles.modal}>
-                <ModalHeader />
+                <ModalHeader title={title}/>
                 <ModalContent />
                 <ModalFooter />
             </div>

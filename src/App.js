@@ -24,6 +24,7 @@ function App() {
     {
       modal ? <div className="overlay"/> : ''
     }
+    {/* Aici putem adauga orice proprietati, sau putem crea un vector de astfel de toast-uri. */}
     <Toast message="Successfully saved the report" type="success"/>
 
     </div>

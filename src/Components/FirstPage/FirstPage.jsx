@@ -14,7 +14,7 @@ const FirstPage = () => {
         <div className={styles.container}>
 
             <div>
-                <img src={process.env.PUBLIC_URL + `/assets/rocket.svg`} />
+                <img alt="rocket" src={process.env.PUBLIC_URL + `/assets/rocket.svg`} />
             </div>
 
             <div>

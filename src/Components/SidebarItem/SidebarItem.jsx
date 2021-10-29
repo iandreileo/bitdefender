@@ -12,7 +12,7 @@ const SidebarItem = ({icon, info, onClick}) => {
         <div class={styles.card} onClick={onClick}>
 
             <div class={styles.icon}>
-                <img src={process.env.PUBLIC_URL + `/assets/${icon}.svg`} />
+                <img alt="sidebarItem" src={process.env.PUBLIC_URL + `/assets/${icon}.svg`} />
             </div>
 
             <div class={styles.info}>

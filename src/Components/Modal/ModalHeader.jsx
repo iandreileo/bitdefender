@@ -3,7 +3,7 @@ import { ModalContext } from '../../Providers/ModalProvider';
 import styles from './Modal.module.scss';
 
 
-const ModalHeader = () => {
+const ModalHeader = ({title}) => {
 
     const [modal, setModal] = useContext(ModalContext);
 
@@ -11,7 +11,7 @@ const ModalHeader = () => {
 
       <div className={styles.modalHeader}>
           <div>
-            <h2>Create Report</h2>
+            <h2>{title}</h2>
           </div>
 
           <div className={styles.close} onClick={() => setModal(false)}>

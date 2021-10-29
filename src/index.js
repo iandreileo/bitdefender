@@ -5,12 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ModalProvider from './Providers/ModalProvider';
 import ToastProvider from './Providers/ToastProvider';
+import UserProvider from './Providers/UserProvider';
 
 ReactDOM.render(
   <React.StrictMode>
     <ToastProvider>
       <ModalProvider>
-        <App />
+        <UserProvider>
+          <App />
+        </UserProvider>
       </ModalProvider>
     </ToastProvider>
   </React.StrictMode>,

@@ -10,7 +10,7 @@ const Landing = () => {
       <>
         <Breadcrumbs title="Page Title"/>
         <FirstPage />
-        <Modal />
+        <Modal title="Create Report"/>
       </>
 
     );

@@ -10,13 +10,20 @@ const Toast = ({type, message}) => {
     let timeout;
 
     const triggerToast = (type) => {
-        if(type == 'fromClose') {
-            // DE REZOLVAT AICI
+        if (type === 'fromClose') {
+            
+            // Dam clear la toate timeouts ca sa evitam bug
+            var id = window.setTimeout(function() {}, 0);
 
+            while (id--) {
+                window.clearTimeout(id); 
+            }
+
+            console.log(timeout)
             toastRef.current.classList.remove(styles.show);
             setToast(false);
             return;
-        } else if(toast) {
+        } else if (toast) {
             toastRef.current.classList.add(styles.show);
             timeout = setTimeout(function () {
               toastRef.current.classList.remove(styles.show);
@@ -28,8 +35,9 @@ const Toast = ({type, message}) => {
     triggerToast();
 
 
+    // Aici putem pune un switch cu diferite proprietati, pentru reutilizabilitate
     let toastStyle;
-    if(type == 'success') {
+    if(type === 'success') {
         toastStyle = {
             backgroundColor: "#268E6C",
         };
@@ -41,7 +49,7 @@ const Toast = ({type, message}) => {
             className={styles.toast}
             style={{ ...toastStyle }}>
             <div className={styles.innerToast}>
-                <img src={process.env.PUBLIC_URL + `/assets/${type}.svg`} />
+                <img alt="type" src={process.env.PUBLIC_URL + `/assets/${type}.svg`} />
                 <div className={styles.toastMessage}>
                     {message}
                 </div>
